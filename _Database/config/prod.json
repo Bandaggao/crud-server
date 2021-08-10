@@ -1,0 +1,10 @@
+{
+  "dev" : {
+    "host" : "agoraproductiondatabase.cfwepv9lv5rm.ap-southeast-1.rds.amazonaws.com",
+    "user" : "agoramasteruser",
+    "password" : "cS%Tct2N%3%Z7+eh",
+    "database" : "agora_health",
+    "driver" : "mysql",
+    "multiupleStatements" : true
+  }, "sql-file": true
+}
