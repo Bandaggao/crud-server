@@ -1,6 +1,3 @@
-# employee-mangement-server
-
-
 ## Project setup
 ```
 npm install
