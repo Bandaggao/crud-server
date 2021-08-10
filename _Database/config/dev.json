@@ -1,9 +1,9 @@
 {
   "dev": {
-    "host" : "agoradevelopmentdb.cfwepv9lv5rm.ap-southeast-1.rds.amazonaws.com",
+    "host" : "a",
     "user" : "admin",
-    "password" : "ag0rAMark37h3r0",
-    "database" : "agora_helth",
+    "password" : "",
+    "database" : "",
     "driver" : "mysql",
     "multiplestatement" : true
   }, "sql-file" : true

@@ -20,14 +20,6 @@ module.exports = {
       message: 'Unauthorized'
     }
   },
-  TOKEN_EXPIRED: {
-    status: 401,
-    body: {
-      code: -3,
-      message: 'Token Expired'
-    }
-  },
-
   INVALID_CREDENTIALS: {
     status: 401,
     body: {
@@ -56,18 +48,11 @@ module.exports = {
       message: 'Invalid token.'
     }
   },
-  MOBILE_NUMBER_EXISTS: {
-    status: 409,
+  EMAIL_EXISTS: {
+    status: 200,
     body: {
-      code: -9,
-      message: 'Mobile Number already exists.'
-    }
-  },
-  MOBILE_NUMBER_NOT_FOUND: {
-    status: 404,
-    body: {
-      code: -2,
-      message: 'Mobile Number not found in the system.'
+      code: -7,
+      message: 'Email already exists.'
     }
   },
   ENDPOINT_NOT_FOUND: {
@@ -97,68 +82,5 @@ module.exports = {
       code: -11,
       message: 'Old password do not match.'
     }
-  },
-  INVALID_GCASH_REF_NO: {
-    status: 401,
-    body: {
-      code: -7,
-      message: 'Invalid Gcash Reference Number.'
-    }
-  },
-  NO_STORE_FOUND: {
-    status: 404,
-    body: {
-      code: -7,
-      message: 'NO STORE FOUND.'
-    }
-  },
-  NO_MERCHANT_FOUND: {
-    status: 404,
-    body: {
-      code: -7,
-      message: 'NO MERCHANT FOUND.'
-    }
-  },
-  NO_PAYMENT_METHOD_FOUND: {
-    status: 404,
-    body: {
-      code: -7,
-      message: 'NO PAYMENT METHOD FOUND.'
-    }
-  },
-  ADDR_OUT_OF_RANGE: {
-    status: 404,
-    body: {
-      code: -7,
-      message: 'ADDRESS IS OUT OF RANGE.'
-    }
-  },
-  INVALID_FIELD: {
-    status: 400-101,
-    body: {
-      code: 400-101,
-      message: 'Merchant Id is different from first items'
-    }
-  },
-  ACCESS_ROLE_DENIED: {
-    status: 500,
-    body: {
-      code: -1,
-      message: 'Access Role Denied.'
-    }
-  },
-  DATE_COMPARISON_ERROR: {
-    status: 500,
-    body: {
-      code: -1,
-      message: 'Dates are not sync.'
-    }
-  },
-  CANCELLATION_NOT_ALLOWED: {
-    status: 405,
-    body: {
-      code: -7,
-      message: 'Your Order has already been processed, you can not cancel it anymore.'
-    }
-  },
+  }
 };

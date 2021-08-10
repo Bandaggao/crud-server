@@ -1,7 +1,10 @@
 const router = require('express').Router();
-const byaheros = require('./ipGetter');
+const employee = require('./employee');
 
-router.use('/ip', byaheros);
+
+
+
+router.use('/employees', employee);
 
 
 module.exports = router;

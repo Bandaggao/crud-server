@@ -1,9 +1,9 @@
 {
   "dev" : {
-    "host" : "agorastagingdb.cfwepv9lv5rm.ap-southeast-1.rds.amazonaws.com",
+    "host" : "",
     "user" : "admin",
-    "password" : "qbZwZC7wtZC5CUyN",
-    "database" : "agora_health",
+    "password" : "",
+    "database" : "",
     "driver" : "mysql",
     "multiupleStatements" : true
   }, "sql-file": true

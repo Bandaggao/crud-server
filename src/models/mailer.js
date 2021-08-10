@@ -10,7 +10,7 @@ module.exports.sendmail = (body) => {
     const transport =  mailer.createTransport({
       service: 'gmail',
       auth: {
-        user: "botbotbatibot1@gmail.com",
+        user: "@gmail.com",
         pass: "thisisapassword"
       }
     });

@@ -1,48 +1,27 @@
 {
-  "name": "agora-load-server",
+  "name": "server",
   "version": "1.0.0",
-  "description": "API for agora load application",
+  "description": "server for employee management",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js",
-    "prod": "pm2 restart ecosystem.config.js --env production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://gitlab.com/agora-dev1/agora-load-server.git"
-  },
-  "author": "Ban Adrian Daggao",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://gitlab.com/agora-dev1/agora-load-server/issues"
-  },
-  "homepage": "https://gitlab.com/agora-dev1/agora-load-server#readme",
   "dependencies": {
-    "aws-sdk": "^2.480.0",
-    "axios": "^0.21.1",
-    "bcrypt": "^5.0.0",
-    "buffer": "^6.0.2",
     "cors": "^2.8.5",
-    "crypto-js": "^4.0.0",
-    "db-migrate": "^0.11.12",
-    "db-migrate-mysql": "^2.1.2",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "express-session": "^1.17.2",
-    "geolib": "^3.3.1",
-    "helmet": "^4.1.1",
-    "jsonwebtoken": "^8.5.1",
-    "moment": "^2.29.1",
-    "multer": "^1.4.2",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "helmet": "^3.15.1",
+    "jsonwebtoken": "^8.5.0",
+    "multer": "^1.4.1",
     "mysql": "^2.18.1",
-    "nodemailer": "^6.4.17",
-    "nodemon": "^2.0.4",
-    "public-ip": "^4.0.4",
-    "request": "^2.88.2",
-    "telerivet": "^1.4.6",
-    "uuid": "^8.3.2",
-    "winston": "^3.3.3"
+    "nodemailer": "^5.1.1",
+    "uuid": "^3.3.2",
+    "winston": "^3.2.1"
+  },
+  "engines": {
+    "node": "10.14.2"
   }
 }

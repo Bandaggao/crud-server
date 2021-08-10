@@ -1,17 +1,26 @@
-const { v4: uuid4 } = require('uuid');
+const uuid4 = require('uuid/v4');
 const successTypes = require('./success-types');
 const errorTypes = require('./error-types');
 
 module.exports = {
   db: {
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
+    host: process.env.DB_HOST ,
+    user: process.env.DB_USER ,
     password: process.env.DB_PASS,
     name: process.env.DB_NAME,
     port: process.env.DB_PORT,
     sslKey: process.env.DB_SSL_KEY
   },
-
+  roles: {
+    SALES: 1,
+    MANCOM: 2,
+    SALES_HEAD: 3,
+    BSG_HEAD: 4,
+    STG_HEAD: 5,
+    MARKETING: 6,
+    EAGG: 7,
+    ADMIN: 8
+  },
   jwtTypes: {
     SSO: {
       secret: process.env.JWT_SSO_SECRET,
@@ -33,17 +42,6 @@ module.exports = {
         jwtid: uuid4()
       }
     }
-  },
-  ubp: {
-    url: process.env.UNIONBANK_API_URL,
-    client_id : process.env.UNIONBANK_CLIENT_ID,
-    client_secret: process.env.UNIONBANK_CLIENT_SECRET,
-    redirect_uri : process.env.UNIONBANK_REDIRECT_URI,
-    partner_id: process.env.UNIONBANK_PARTNER_ID,
-    scope: "payments",
-    request_type: "code",
-    grant_type: "authorization_code",
-    type: "single"
   },
   successTypes,
   errorTypes
